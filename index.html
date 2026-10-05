@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Térképjavító műhely</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Archivo+Narrow:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrap">
+<header class="top">
+  <div>
+    <div class="eyebrow">Geodesign · Térképszerkesztési elvek és ábrázolás</div>
+    <h1>Térképjavító műhely</h1>
+  </div>
+  <div class="topbtns">
+    <button class="btn" id="resetBtn" type="button">Rossz térkép visszaállítása</button>
+    <button class="btn primary" id="testBtn" type="button">5 másodperces teszt</button>
+  </div>
+</header>
+
+
+<div class="grid">
+  <aside class="panel" aria-label="Szerkesztő">
+    <h2>Szerkesztő</h2>
+    <div class="ctrls" id="ctrls"></div>
+  </aside>
+
+  <main class="sheetwrap">
+    <div class="sheet" id="sheet"></div>
+    <div class="sheetbar">
+      <span id="caption">Megyék és főváros, 20 területi egység</span>
+
+    </div>
+  </main>
+
+</div>
+</div>
+
+<div class="overlay" id="overlay" hidden>
+  <div class="cd" id="cd"></div>
+  <div class="big" id="big"></div>
+  <div class="q" id="q" hidden>Mi a térkép fő üzenete? Mondjátok ki egyetlen mondatban.</div>
+  <button class="btn" id="closeOv" type="button" hidden>Vissza a szerkesztőhöz</button>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
