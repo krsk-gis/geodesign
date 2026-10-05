@@ -1,3 +1,4 @@
+[hidden]:not([hidden=until-found i]){display:none!important}
 /* Layout: munkaasztal. Bal oldalt a szerkesztő vezérlők, középen a térképlap mint papír, jobbra az elvek ellenőrzőlistája. */
 :root{
   --bg:#f3f3f1; --panel:#ffffff; --ink:#121212; --muted:#5f5f5c; --rule:#d9d9d5; --soft:#ebebe8;
